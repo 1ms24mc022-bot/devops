@@ -23,7 +23,7 @@ pipeline {
         stage('Run') {
             steps {
                 echo 'Running Java program...'
-                sh 'Hello_RIT.java'
+                sh 'Hello_RIT'
             }
         }
     }
