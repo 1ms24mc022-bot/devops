@@ -12,7 +12,7 @@ pipeline
                 steps
                 {
                   echo "compiling"
-                  sh "javac hello.java"
+                  sh "javac Hello_RIT.java"
                 }
               }
                 stage("running")
@@ -20,7 +20,7 @@ pipeline
                   steps
                     {
                       echo "executing"
-                      sh "java hello"
+                      sh "java Hello_RIT"
                     }
                 }
           }
