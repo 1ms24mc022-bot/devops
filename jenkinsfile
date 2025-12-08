@@ -1,0 +1,27 @@
+pipeline
+{
+  agent any
+    triggers
+            {
+              cron("*****")
+            }
+    stages
+          {
+              steps("compiling")
+              {
+                steps
+                {
+                  echo "compiling"
+                  sh "javac hello.java"
+                }
+              }
+                stage("running")
+                {
+                  steps
+                    {
+                      echo "executing"
+                      sh "java hello"
+                    }
+                }
+          }
+  }
